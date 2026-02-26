@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "CyberCoach Sensor",
+    "version": "1.0.0",
+    "description": "On-device cybersecurity behavior sensor. Detects risky browsing patterns and sends alerts to the local CyberCoach daemon.",
+    "permissions": [
+        "webRequest",
+        "downloads",
+        "storage",
+        "notifications",
+        "webNavigation"
+    ],
+    "host_permissions": [
+        "<all_urls>",
+        "http://127.0.0.1:8000/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}
